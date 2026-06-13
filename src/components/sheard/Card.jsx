@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FcLike } from "react-icons/fc";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Card = ({ photo }) => {
-    
   return (
     <div>
       <div className="card bg-base-100 shadow-sm p-5">
@@ -27,7 +27,10 @@ const Card = ({ photo }) => {
             </button>
           </div>
           <div className="">
-            <button className="btn w-full rounded-full bg-white">View</button>
+            <Link href={`/all-photos/${photo.id}`}>
+              
+              <button className="btn w-full rounded-full bg-white">View</button>
+            </Link>
           </div>
         </div>
       </div>

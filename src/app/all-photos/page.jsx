@@ -5,7 +5,7 @@ const AllPhotoPage = async () => {
     "https://ai-genarate-image-project.vercel.app/data.json",
   );
   const data = await res.json();
-  console.log(data);
+  
   return (
     <div>
       <h1 className="mt-4 text-2xl font-bold">All Photos</h1>
